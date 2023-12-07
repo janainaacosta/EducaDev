@@ -1,0 +1,361 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Estilização Header */
+ header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;    height: 100px;
+    border-radius: 5px;
+    height: 80px;
+}
+
+.logo{
+    width: 16%;
+    font-size: xx-large;
+    margin-top: 5px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #1C1D1F;
+}
+
+.logo span{
+    color: #75c78c;
+}
+
+.categoria{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.barra_pesquisa{
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+    border: solid #acacac 1px;
+}
+
+.barra_pesquisa input{
+    width: 85%;
+    height: 80%;
+    outline: none;   
+    font-size: large;
+}
+
+.tres_icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5%;
+}
+
+.tres_icones img{
+    margin: 10px;
+}
+/* Estilização Header */
+
+/* NavBar */
+nav{
+    margin-left: 50px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    color: #acacac;
+    border-radius: 5px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1C1D1F;
+}
+
+nav span{
+    color: #75c78c;
+}
+
+nav p{
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav a{
+    color: #1C1D1F;
+    text-decoration: none;
+}
+
+nav p:hover{
+    color: #75c78c;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+/* NavBar */
+
+.container_sobre_sobre{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 5%;
+    background-image: url("../../Assets/fundo.jpg");
+
+}
+.sobre_sobre{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: #1C1D1F;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+
+
+.card-principal{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: #75c78c 0px 0px 0px 2px inset, 
+    rgb(255, 255, 255) 10px -10px 0px -3px,#75c78c 10px -10px, 
+    rgb(255, 255, 255) 20px -20px 0px -3px,#75c78c 20px -20px, 
+    rgb(255, 255, 255) 30px -30px 0px -3px, #75c78c 30px -30px,
+    rgb(255, 255, 255) 40px -40px 0px -3px, #75c78c 40px -40px;
+    width: 70vw;
+    height: 50vh;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#div-info-card-principal{
+    margin: 10px;
+    width: 50%;
+    height: 90%;
+}
+
+#imagem-card-principal img{
+    float: left;
+    width: 450px;
+    margin-left: 100px;
+
+}
+
+#textos_card{
+    margin-top: 20px;
+}
+
+#textos_card h3{
+    margin-top: 100px;
+}
+
+#textos_card h2, p{
+    margin-top: 20px;
+}
+
+#textos_card p{
+    width: 80%;
+}
+
+#div-btns-desc-principal{
+    margin-top: 9%;
+    width: 70%;
+    bottom: 0;
+}
+
+#btn-desc-princ{
+    background-color: #1C1D1F;
+    justify-content: center;
+    text-align: center;
+    width: 97%;
+    padding: 10px;
+}
+
+#btn-desc-princ a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+/* Sobre */
+.container_sobre{
+    width: 100%;
+    height: 500px;
+    background-image: url("../../Assets/sobre.jpg");
+}
+
+.sobre{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.826);
+}
+
+
+.conteudo_sobre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.conteudo_sobre h1{
+    font-size: xx-large;
+
+}
+.conteudo_sobre p{
+    font-size: large;
+    color: #1c1d1fc1;
+}
+/* NavBar */
+
+/* Sobre */
+.container_sobre{
+    width: 100%;
+    height: 500px;
+    background-image: url("../../Assets/sobre.jpg");
+}
+
+.sobre{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.826);
+}
+
+
+.conteudo_sobre{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    margin-left: 150px;
+    padding: 10px;
+}
+
+.conteudo_sobre h1{
+    font-size: xx-large;
+
+}
+.conteudo_sobre p{
+    font-size: large;
+    color: #1c1d1fc1;
+}
+/* Estilização Header */
+
+
+/* #section-sobre-nos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    width: 80%;
+   
+} */
+
+#section-sobre-nos{
+    display: flex;
+    flex-wrap: wrap; 
+   
+    flex-direction: column;
+    margin: 100px;
+    
+    width: 80%;
+}
+
+#div-1-membro-1, #div-1-membro-2{
+    width: 30%;
+}
+
+#div-1-membro-1{
+    float: left;
+}
+
+#div-1-membro-2{
+    float: right;
+}
+
+
+/* Footer */
+
+#div-footer{
+    position: static;
+    background-color: #1C1D1F;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+
+}
+
+#div-footer h3{
+font-weight: 100;
+font-size: 20px;
+margin: 10px;
+
+}
+
+#div-footer p{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+#area-lista-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin: 20px;
+    padding: 40px;
+    border-top: solid 1px #acacac23;
+}
+
+#area-lista-footer li{
+    list-style-type: none;
+    margin:20px ;
+
+}

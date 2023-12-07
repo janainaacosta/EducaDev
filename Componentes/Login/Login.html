@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login JS </title>
+        <link rel = "stylesheet" href = "./Login.css"/>
+    </head>
+
+    <header>
+        <div class="logo">
+            <a href="../Home/Home.html">
+                <h2 class = "logo2"><span>E</span>duca <span>D</span>evs</h2>
+            </a>
+        </div>
+
+        <div class="barra_pesquisa">
+            <img src="../../Assets/lupa.png" alt="lupa">
+            <input type="text" placeholder="pesquisar">
+        </div>
+        <nav>
+            <a href="../Cursos/Cursos.html">
+                <p>Nossos cursos</p>
+            </a>
+            <a href="../Em_Andamento/Andamento.html">
+                <p>Cursos em andamento</p>
+            </a>
+            <a href="../Sobre/Sobre.html">
+                <p>Sobre nós</p>
+            </a>
+        </nav>
+        <div class="tres_icones">
+            <a href="../Favoritos/favoritos.html"><img src="../../Assets//coracao.png" alt="favoritos"></a>
+            <a href="../Carrinho/Carrinho.html"><img src="../../Assets/carrinho.png" alt="carrinho"></a>
+            <a href="../Login/Login.html"><img src="../../Assets/user.png" alt="login"></a>
+        </div>
+    </header>
+
+
+    <body>
+
+        <form>
+            <h3>Login</h3>
+            <div class="mensagem" id="mensagem"></div>
+            <input type="text" placeholder="Login" id="Login">
+            <input type="password" placeholder="Senha" id="Senha">
+            <button type="submit" onclick="logar(); return false" class="enviar-btn">Entrar</button>
+<button type="button" onclick="window.location.href='../Cadastro/Cadastro.html'" class="cadastrar-btn">Cadastrar usuario</button>
+        </form>
+
+
+        <footer id="div-footer">
+            <h3>Aprendizado sem limites, apenas cliques de distância.</h3>
+            <div id="area-lista-footer">
+                <ul>
+                    <li>Termos</li>
+                    <li>Políticas de privacidade</li>
+                    <li>Mapa do site</li>
+                </ul>
+    
+                <ul>
+                    <li>Carreiras</li>
+                    <li>Ajuda e suporte</li>
+                    <li>Investidores</li>
+                </ul>
+    
+                <ul>
+                    <li>Blog</li>
+                    <li>obtenha o aplicativo</li>
+                    <li>Afiliado</li>
+                </ul>
+            </div>
+            <p>2023</p>
+            <div class="logo">
+                <!-- Div Responsavel Pelo Logo -->
+                <a href="./Home.html"></a>
+                <h2><span>E</span>duca <span>D</span>ev</h2></a>
+            </div>
+        </footer>
+
+        <script>
+            function logar() {
+                var usuario = document.getElementById('Login').value;
+                var senha = document.getElementById('Senha').value;
+                var mensagemElement = document.getElementById('mensagem');
+        
+                // Recuperar dados do localStorage usando o nome de usuário como chave
+                var usuariosArmazenados = JSON.parse(localStorage.getItem('usuarios')) || [];
+        
+                var usuarioArmazenado = usuariosArmazenados.find(u => u.nomeUsuario === usuario);
+        
+                if (usuarioArmazenado) {
+                    // Se o usuário existir, verificar a senha
+                    if (usuarioArmazenado.senha === senha) {
+                        mensagemElement.innerHTML = '<p class="mensagem sucesso">Login bem-sucedido!</p>';
+                        
+                        // Aguardar um segundo antes de redirecionar
+                        setTimeout(function() {
+                            // Exibir mensagem de boas-vindas antes do redirecionamento
+                            alert('Seja bem-vindo, ' + usuarioArmazenado.nomeCompleto + '!');
+                            // Redirecionar para a página principal
+                            window.location.href = "../Home/Home.html";
+                        }, 1000);
+                    } else {
+                        mensagemElement.innerHTML = '<p class="mensagem erro">Senha incorreta</p>';
+                    }
+                } else {
+                    mensagemElement.innerHTML = '<p class="mensagem erro">Usuário não encontrado</p>';
+                }
+            }
+        </script>
+    </body>
+    
+    </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudação - Educadev</title>
+
+</head>
+<body>
+ 
+    <script>
+        alert("Seja bem-vindo ao EducaDev! Aperte em OK para ser redirecionado para nossa página de Cadastro.");
+    
+        // Função para redirecionar ao clicar em OK
+        function redirecionarParaCadastro() {
+            window.location.href = "./Componentes/Cadastro/Cadastro.html";
+        }
+    
+        // Adiciona um evento ao clique no botão OK
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                redirecionarParaCadastro();
+            }, 0);
+        });
+    </script>
+    
+</body>
+</html>

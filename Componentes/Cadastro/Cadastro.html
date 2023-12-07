@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+
+ <head>
+
+    <Title>Cadastro</Title>
+    <link rel = "stylesheet" href = "Cadastro.css">
+ </head>
+
+ 
+
+    <header>
+        <div class="logo">
+            <a href="../Home/Home.html">
+                <h2 class = "logo2"><span>E</span>duca <span>D</span>evs</h2>
+            </a>
+        </div>
+
+        <div class="barra_pesquisa">
+            <img src="../../Assets/lupa.png" alt="lupa">
+            <input type="text" placeholder="pesquisar">
+        </div>
+        <nav>
+            <a href="../Cursos/Cursos.html">
+                <p>Nossos cursos</p>
+            </a>
+            <a href="../Em_Andamento/Andamento.html">
+                <p>Cursos em andamento</p>
+            </a>
+            <a href="../Sobre/Sobre.html">
+                <p>Sobre nós</p>
+            </a>
+        </nav>
+        <div class="tres_icones">
+            <img src="../../Assets/coracao.png" alt="favoritos">
+            <a href="../Carrinho/Carrinho.html"><img src="../../Assets/carrinho.png" alt="carrinho"></a>
+            <a href="../Login/Login.html"><img src="../../Assets/user.png" alt="login"></a>
+        </div>
+    </header>
+
+    <body>
+
+ <form class="cadastro-form">
+    <h3>Cadastro</h3>
+    <div class="mensagem" id="cadastro-mensagem"></div>
+    <input type="text" placeholder="Nome de Usuário" id="NomeUsuario">
+    <input type="text" placeholder="Nome Completo" id="NomeCompleto">
+    <input type="email" placeholder="Email" id="Email">
+    <input type="password" placeholder="Senha" id="CadastroSenha">
+    <input type="tel" placeholder="Celular" id="Celular">
+    <label for="genero">Gênero:</label>
+    <div class="genero-checkboxes">
+        <input type="checkbox" id="generoHomem" name="genero" value="homem" onclick="limparCheckbox('generoHomem')"> Homem
+        <input type="checkbox" id="generoMulher" name="genero" value="mulher" onclick="limparCheckbox('generoMulher')"> Mulher
+        <input type="checkbox" id="generoOutros" name="genero" value="outros" onclick="limparCheckbox('generoOutros')"> Outros
+    </div>
+    <button type="button" onclick="cadastrar(); return false" class="enviar-btn">Cadastrar</button>
+    <button type="button" onclick="window.location.href='../Login/Login.html'" class="voltar-btn">Voltar a tela de login</button>
+    <button type="button" onclick="limparContas();">Limpar Contas</button>
+</form>
+
+<footer id="div-footer">
+    <h3>Aprendizado sem limites, apenas cliques de distância.</h3>
+    <div id="area-lista-footer">
+        <ul>
+            <li>Termos</li>
+            <li>Políticas de privacidade</li>
+            <li>Mapa do site</li>
+        </ul>
+
+        <ul>
+            <li>Carreiras</li>
+            <li>Ajuda e suporte</li>
+            <li>Investidores</li>
+        </ul>
+
+        <ul>
+            <li>Blog</li>
+            <li>obtenha o aplicativo</li>
+            <li>Afiliado</li>
+        </ul>
+    </div>
+    <p>2023</p>
+    <div class="logo">
+        <!-- Div Responsavel Pelo Logo -->
+        <a href="./Home.html"></a>
+        <h2><span>E</span>duca <span>D</span>ev</h2></a>
+    </div>
+</footer>
+
+<script>
+
+var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+
+function limparContas() {
+    // Limpar todos os dados do localStorage
+    localStorage.clear();
+    alert("Todas as contas foram removidas.");
+    window.location.reload();
+}
+
+
+    function limparCheckbox(id) {
+        var checkboxes = document.querySelectorAll('.genero-checkboxes input');
+        checkboxes.forEach(function (checkbox) {
+            if (checkbox.id !== id) {
+                checkbox.checked = false;
+            }
+        });
+    }
+
+    function cadastrar() {
+        var nomeUsuario = document.getElementById('NomeUsuario').value;
+        var nomeCompleto = document.getElementById('NomeCompleto').value;
+        var email = document.getElementById('Email').value;
+        var senha = document.getElementById('CadastroSenha').value;
+        var celular = document.getElementById('Celular').value;
+        var mensagemElement = document.getElementById('cadastro-mensagem');
+
+
+        var generoHomem = document.getElementById('generoHomem');
+        var generoMulher = document.getElementById('generoMulher');
+        var generoOutros = document.getElementById('generoOutros');
+
+        if (!(generoHomem.checked || generoMulher.checked || generoOutros.checked)) {
+            mensagemElement.innerHTML = '<p class="mensagem erro">Selecione uma opção de gênero.</p>';
+            return;
+        }
+
+
+        var usuario = {
+            nomeUsuario: nomeUsuario,
+            nomeCompleto: nomeCompleto,
+            email: email,
+            senha: senha,
+            celular: celular,
+            genero: (generoHomem.checked ? "Homem" : (generoMulher.checked ? "Mulher" : "Outros"))
+        };
+
+
+        if (usuarios.find(u => u.email === email || u.nomeUsuario === nomeUsuario)) {
+            mensagemElement.innerHTML = '<p class="mensagem erro">Este email ou nome de usuário já está cadastrado</p>';
+            return;
+        }
+
+
+        usuarios.push(usuario);
+
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        mensagemElement.innerHTML = '<p class="mensagem sucesso">Cadastro realizado. Seja bem-vindo, ' + nomeCompleto + '!</p>';
+        console.log("Usuários cadastrados:", usuarios);
+    }
+</script>
+
+</body>
+
+
+
+</html>

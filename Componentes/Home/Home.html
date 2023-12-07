@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EducaDev</title>
+    <link rel="stylesheet" href="./Home.css" />
+  </head>
+
+  
+  <body>
+
+    <header>
+      <div class="logo">
+          <a href="../Home/Home.html">
+              <h2><span>E</span>duca <span>D</span>evs</h2>
+          </a></a>
+      </div>
+
+      <div class="barra_pesquisa">
+          <img src="../../Assets/lupa.png" alt="lupa">
+          <input type="text" placeholder="pesquisar">
+      </div>
+      <nav>
+          <a href="../Cursos/Cursos.html">
+              <p>Nossos cursos</p>
+          </a>
+          <a href="../Em_Andamento/Andamento.html">
+              <p>Cursos em andamento</p>
+          </a>
+          <a href="../Sobre/Sobre.html">
+              <p>Sobre nós</p>
+          </a>
+      </nav>
+      <div class="tres_icones">
+        <a href="../Favoritos/favoritos.html"><img src="../../Assets//coracao.png" alt="favoritos"></a>
+        <a href="../Carrinho/Carrinho.html"><img src="../../Assets/carrinho.png" alt="carrinho"></a>
+        <a href="../Login/Login.html"><img src="../../Assets/user.png" alt="login"></a>
+    </div>
+  </header>
+
+    <section>
+      <div class="container_sobre">
+        <div class="sobre">
+          <h2>Aprendizado sem limites, apenas cliques de distância.</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="container-cards-nossos-cursos">
+      <div id="textos_inicio_container_cursos">
+        <h2 id="titulo-section">Uma ampla seleção de cursos</h2>
+        <p>
+          Escolha entre mais de 210.000 cursos em vídeo online com novas adições
+          publicadas mensalmente
+        </p>
+      </div>
+
+      <div id="row">
+        <!-- Curso 1 -->
+        <div class="card">
+          <div class="imagem">
+            <img src="../../Assets/html.png" alt="favoritos" />
+          </div>
+          <div class="textos">
+            <p>
+              Lorem edit eos nobis quis voluptatum neque suscipit, at cupiditate
+            </p>
+            <h2>R$185,99</h2>
+          </div>
+          <div id="div-1-btns-desc-curso">
+            <div class="btn-desc-home">
+              <a href="../Descricao/Descricao.html">Ver descrição</a>
+            </div>
+            <div id="teste">
+              <button
+                id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso HTML', 'R$185,99', '../../Assets/html.png')"
+              >
+                Adicionar ao carrinho
+              </button>
+
+              <a href="../Favoritos/favoritos.html">
+                <button
+                  id="btn-desc-add-favorito"
+                  onclick="adicionarAofavoritos('Curso HTML', 'R$185,99', '../../Assets/html.png')"
+                >
+                  <img src="../../Assets/coracao.png" alt="favoritos" />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ... (seu HTML anterior) ... -->
+
+        <!-- Curso 2 -->
+        <div class="card">
+          <div class="imagem">
+            <img src="../../Assets/css.jpg" alt="favoritos" />
+          </div>
+          <div class="textos">
+            <p>
+              Lorem edit eos nobis quis voluptatum neque suscipit, at cupiditate
+            </p>
+            <h2>R$129,99</h2>
+          </div>
+          <div id="div-1-btns-desc-curso">
+            <div class="btn-desc-home">
+              <a href="../Descricao/Descricao.html">Ver descrição</a>
+            </div>
+            <div id="teste">
+              <button
+                id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso CSS', 'R$129,99', '../../Assets/css.jpg')"
+              >
+                Adicionar ao carrinho
+              </button>
+              <button
+                id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Curso CSS', 'R$129,99', '../../Assets/css.jpg')"
+              >
+                <img src="../../Assets/coracao.png" alt="favoritos" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 3 -->
+        <div class="card">
+          <div class="imagem">
+            <img src="../../Assets/javascript.jpg" alt="favoritos" />
+          </div>
+          <div class="textos">
+            <p>
+              Lorem edit eos nobis quis voluptatum neque suscipit, at cupiditate
+            </p>
+            <h2>R$139,99</h2>
+          </div>
+          <div id="div-1-btns-desc-curso">
+            <div class="btn-desc-home">
+              <a href="../Descricao/Descricao.html">Ver descrição</a>
+            </div>
+            <div id="teste">
+              <button
+                id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso JavaScript', 'R$139,99', '../../Assets/javascript.jpg')"
+              >
+                Adicionar ao carrinho
+              </button>
+              <button
+                id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Curso JavaScript', 'R$139,99', '../../Assets/javascript.jpg')"
+              >
+                <img src="../../Assets/coracao.png" alt="favoritos" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 4 -->
+        <div class="card">
+          <div class="imagem">
+            <img src="../../Assets/node.png" alt="favoritos" />
+          </div>
+          <div class="textos">
+            <p>
+              Lorem edit eos nobis quis voluptatum neque suscipit, at cupiditate
+            </p>
+            <h2>R$167,99</h2>
+          </div>
+          <div id="div-1-btns-desc-curso">
+            <div class="btn-desc-home">
+              <a href="../Descricao/Descricao.html">Ver descrição</a>
+            </div>
+            <div id="teste">
+              <button
+                id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso Node.js', 'R$167,99', '../../Assets/node.png')"
+              >
+                Adicionar ao carrinho
+              </button>
+              <button
+                id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Curso Node.js', 'R$167,99', '../../Assets/node.png')"
+              >
+                <img src="../../Assets/coracao.png" alt="favoritos" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Curso 5 -->
+        <div class="card">
+          <div class="imagem">
+            <img src="../../Assets/css.jpg" alt="favoritos" />
+          </div>
+          <div class="textos">
+            <p>
+              Lorem edit eos nobis quis voluptatum neque suscipit, at cupiditate
+            </p>
+            <h2>R$129,99</h2>
+          </div>
+          <div id="div-1-btns-desc-curso">
+            <div class="btn-desc-home">
+              <a href="../Descricao/Descricao.html">Ver descrição</a>
+            </div>
+            <div id="teste">
+              <button
+                id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso CSS', 'R$129,99', '../../Assets/css.jpg')"
+              >
+                Adicionar ao carrinho
+              </button>
+              <button
+                id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Curso CSS', 'R$129,99', '../../Assets/css.jpg')"
+              >
+                <img src="../../Assets/coracao.png" alt="favoritos" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="div-footer">
+      <h3>Aprendizado sem limites, apenas cliques de distância.</h3>
+      <div id="area-lista-footer">
+          <ul>
+              <li>Termos</li>
+              <li>Políticas de privacidade</li>
+              <li>Mapa do site</li>
+          </ul>
+
+          <ul>
+              <li>Carreiras</li>
+              <li>Ajuda e suporte</li>
+              <li>Investidores</li>
+          </ul>
+
+          <ul>
+              <li>Blog</li>
+              <li>obtenha o aplicativo</li>
+              <li>Afiliado</li>
+          </ul>
+      </div>
+      <p>2023</p>
+      <div class="logo">
+          <a href="./Home.html"></a>
+          <h2><span>E</span>duca <span>D</span>ev</h2></a>
+      </div>
+  </footer>
+  </body>
+
+  <script>
+    function adicionarAoCarrinho(descricao, preco, imagem) {
+      var cursos = JSON.parse(localStorage.getItem("cursos")) || [];
+      cursos.push({
+        descricao: descricao,
+        preco: preco,
+        imagem: imagem,
+      });
+      localStorage.setItem("cursos", JSON.stringify(cursos));
+      window.location.href = "../Carrinho/Carrinho.html";
+    }
+
+    var cursos = JSON.parse(localStorage.getItem("cursos")) || [];
+
+    var carrinhoDetails = document.getElementById("carrinhoDetails");
+
+    cursos.forEach(function (curso, index) {
+      var card = document.createElement("div");
+      card.className = "card";
+
+      var imagemContainer = document.createElement("div");
+      imagemContainer.className = "imagem";
+
+      var imagemCurso = document.createElement("img");
+      imagemCurso.src = curso.imagem;
+      imagemCurso.alt = "Imagem do Curso";
+
+      imagemContainer.appendChild(imagemCurso);
+
+      var textos = document.createElement("div");
+      textos.className = "textos";
+
+      var descricaoCurso = document.createElement("p");
+      descricaoCurso.innerText = curso.descricao;
+
+      var precoCurso = document.createElement("h2");
+      precoCurso.innerText = curso.preco;
+
+      textos.appendChild(descricaoCurso);
+      textos.appendChild(precoCurso);
+
+      card.appendChild(imagemContainer);
+      card.appendChild(textos);
+
+      carrinhoDetails.appendChild(card);
+    });
+
+    function adicionarAofavoritos(descricao, preco, imagem) {
+      var cursos_fav = JSON.parse(localStorage.getItem("cursos_fav")) || [];
+      cursos_fav.push({
+        descricao: descricao,
+        preco: preco,
+        imagem: imagem,
+      });
+      localStorage.setItem("cursos_fav", JSON.stringify(cursos_fav));
+      window.location.href = "../Favoritos/favoritos.html";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var cursos_fav = JSON.parse(localStorage.getItem("cursos_fav")) || [];
+      var favoritoDetails = document.getElementById("favoritoDetails");
+
+      cursos_fav.forEach(function (curso, index) {
+        var card = document.createElement("div");
+        card.className = "card";
+
+        var imagemContainer = document.createElement("div");
+        imagemContainer.className = "imagem";
+
+        var imagemCurso = document.createElement("img");
+        imagemCurso.src = curso.imagem;
+        imagemCurso.alt = "Imagem do Curso";
+
+        imagemContainer.appendChild(imagemCurso);
+
+        var textos = document.createElement("div");
+        textos.className = "textos";
+
+        var descricaoCurso = document.createElement("p");
+        descricaoCurso.innerText = curso.descricao;
+
+        var precoCurso = document.createElement("h2");
+        precoCurso.innerText = curso.preco;
+
+        textos.appendChild(descricaoCurso);
+        textos.appendChild(precoCurso);
+
+        card.appendChild(imagemContainer);
+        card.appendChild(textos);
+
+        favoritoDetails.appendChild(card);
+      });
+    });
+  </script>
+</html>

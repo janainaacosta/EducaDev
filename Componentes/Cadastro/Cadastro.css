@@ -1,0 +1,264 @@
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    width: 300px;
+    margin: 200px auto;
+    text-align: center;
+
+}
+
+form input{
+    border: solid 1px black;
+    display: block;
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+}
+
+
+
+/* Estilização Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;    height: 100px;
+    border-radius: 5px;
+    height: 100px;
+}
+
+.logo{
+    width: 16%;
+    font-size: xx-large;
+    margin-top: 5px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #1C1D1F;
+}
+
+.logo span{
+    color: #75c78c;
+}
+
+.logo2 {
+    color: rgba(1,1,1,1);
+}
+
+.categoria{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.barra_pesquisa{
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+    border: solid #acacac 1px;
+}
+
+.barra_pesquisa input{
+    width: 85%;
+    height: 80%;
+    outline: none;   
+    font-size: large;
+}
+
+.tres_icones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5%;
+}
+
+.tres_icones img{
+    margin: 10px;
+}
+/* Estilização Header */
+
+/* NavBar */
+
+nav{
+    margin-left: 50px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5px;
+    color: #acacac;
+    border-radius: 5px;
+}
+
+.nav_bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    color: #8C8C8D;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.nav_bar h1:hover{
+    color: #75c78c;
+    transition: 1s;
+    transform:scale(1.1);
+}
+
+nav a{
+    text-decoration: none;
+    color: #1C1D1F;
+}
+
+nav span{
+    color: #75c78c;
+}
+
+nav p{
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav a{
+    color: #1C1D1F;
+    text-decoration: none;
+}
+
+nav p:hover{
+    color: #75c78c;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+/* NavBar */
+
+/* Estilização do Formulário */
+
+form.cadastro-form {
+    width: 400px; /* Ajuste a largura conforme necessário */
+    height: 500px; /* Ajuste a altura conforme necessário */
+    margin: 100px auto; /* Ajuste as margens conforme necessário */
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form.cadastro-form h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form.cadastro-form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+form.cadastro-form .genero-checkboxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Adicionado para alinhar verticalmente os checkboxes */
+    margin: 10px 0;
+}
+
+form.cadastro-form .genero-checkboxes input {
+    width: auto; /* Alterado para ajustar ao tamanho do texto */
+    border: 1px solid #000000; /* Adicionado estilo de borda */
+    border-radius: 3px; /* Adicionado para arredondar as bordas */
+    margin: 0 5px; /* Adicionado espaçamento entre os checkboxes */
+}
+form.cadastro-form button.enviar-btn,
+form.cadastro-form button.voltar-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form.cadastro-form button.enviar-btn:hover,
+form.cadastro-form button.voltar-btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+
+#div-footer{
+    position: static;
+    background-color: #1C1D1F;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+
+}
+
+#div-footer h3{
+font-weight: 100;
+font-size: 20px;
+margin: 10px;
+
+}
+
+#div-footer p{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 10px;
+
+}
+
+#area-lista-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    margin: 20px;
+    padding: 40px;
+    border-top: solid 1px #acacac23;
+}
+
+#area-lista-footer li{
+    list-style-type: none;
+    margin:20px ;
+
+}

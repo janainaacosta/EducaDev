@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Descricao.css">
+
+    <title>EducaDev</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="../Home/Home.html">
+                <h2><span>E</span>duca <span>D</span>evs</h2>
+            </a></a>
+        </div>
+  
+        <div class="barra_pesquisa">
+            <img src="../../Assets/lupa.png" alt="lupa">
+            <input type="text" placeholder="pesquisar">
+        </div>
+        <nav>
+            <a href="../Cursos/Cursos.html">
+                <p>Nossos cursos</p>
+            </a>
+            <a href="../Em_Andamento/Andamento.html">
+                <p>Cursos em andamento</p>
+            </a>
+            <a href="../Sobre/Sobre.html">
+                <p>Sobre nós</p>
+            </a>
+        </nav>
+        <div class="tres_icones">
+          <a href="../Favoritos/favoritos.html"><img src="../../Assets//coracao.png" alt="favoritos"></a>
+          <a href="../Carrinho/Carrinho.html"><img src="../../Assets/carrinho.png" alt="carrinho"></a>
+          <a href="../Login/Login.html"><img src="../../Assets/user.png" alt="login"></a>
+      </div>
+    </header>   
+
+    <section id="section-titulo-curso">
+
+        <div id="teste-area">
+            <div id="div-1-apresentacao">
+                <h1 id="descricaoCurso"></h1>
+                <p id="info-descricao"></p>
+            </div>
+            <div id="div-2-apresentacao">
+               <div id="img-card-desc-curso">
+                   <img id="imagemCurso" alt="Imagem do Curso">
+               </div>
+               <p id="texto-card-curso-desc"></p>
+               <p id="valor-curso-desc"></p>
+
+               <div id="container-btns-desc-curso">
+                    <div id="div-1-btns-desc-curso">
+                        <button id="btn-desc-add-carrinho"> Adicionar ao carrinho</button>
+                        <button id="btn-desc-add-favorito">
+                            <img src="../../Assets/coracao.png" alt="favoritos">
+                        </button>
+                    </div>
+                    <button id="btn-desc-comprar">Comprar</button>
+               </div>
+
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="descritivo-curso">
+        <div id="div-info">
+            <h1 >Sobre o Curso</h1>
+            <p class="text_descricao"  id="descricao-curso"></p>
+        </div>
+    </section>
+
+<!-- ... (seu código existente) ... -->
+<script>
+    function exibirDetalhesCurso() {
+        // Obtenha os parâmetros da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Obtém a descrição, imagem, preço e teste dos parâmetros da URL
+        const descricao = urlParams.get('descricao');
+        const imagem = urlParams.get('imagem');
+        const preco = urlParams.get('preco');
+        const teste = urlParams.get('teste'); // Adicione isso para obter o parâmetro 'teste'
+    
+        // Exibe os detalhes do curso na página
+        document.getElementById('descricaoCurso').innerText = descricao || 'Descrição não disponível';
+        document.getElementById('imagemCurso').src = imagem || 'URL_DA_IMAGEM_PADRAO';
+        document.getElementById('valor-curso-desc').innerText = preco || 'Preço não disponível';
+
+        // Chama a função para exibir a descrição do curso
+        exibirDescricaoCurso();
+    }
+
+    function exibirDescricaoCurso() {
+        // Obtenha o parâmetro de descrição_curso da URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const descricaoCurso = urlParams.get('descricao_curso');
+        const teste = urlParams.get('teste'); // Adicione isso para obter o parâmetro 'teste'
+
+        // Exibe a descrição do curso na página
+        document.getElementById('descricao-curso').innerText = descricaoCurso || 'Descrição do curso não disponível';
+
+        // Exibe o teste na descrição do curso (pode ser ajustado conforme necessário)
+        document.getElementById('descricao-curso').innerText += `\n\n${teste || ''}`;
+    }
+
+    // Chame as funções ao carregar a página
+    document.addEventListener('DOMContentLoaded', exibirDetalhesCurso);
+</script>
+
+<footer id="div-footer">
+    <h3>Aprendizado sem limites, apenas cliques de distância.</h3>
+    <div id="area-lista-footer">
+        <ul>
+            <li>Termos</li>
+            <li>Políticas de privacidade</li>
+            <li>Mapa do site</li>
+        </ul>
+
+        <ul>
+            <li>Carreiras</li>
+            <li>Ajuda e suporte</li>
+            <li>Investidores</li>
+        </ul>
+
+        <ul>
+            <li>Blog</li>
+            <li>obtenha o aplicativo</li>
+            <li>Afiliado</li>
+        </ul>
+    </div>
+    <p>2023</p>
+    <div class="logo">
+        <a href="./Home.html"></a>
+        <h2><span>E</span>duca <span>D</span>ev</h2></a>
+    </div>
+</footer>
+
+</body>
+</html>

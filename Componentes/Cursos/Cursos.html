@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducaDev</title>
+    <link rel="stylesheet" href="./Cursos.css">
+</head>
+
+<header>
+    <div class="logo">
+        <a href="../Home/Home.html">
+            <h2><span>E</span>duca<span>D</span>ev</h2>
+        </a></a>
+    </div>
+
+    <div class="barra_pesquisa">
+        <img src="../../Assets/lupa.png" alt="lupa">
+        <input type="text" placeholder="pesquisar">
+    </div>
+    <nav>
+        <a href="../Cursos/Cursos.html">
+            <p>Nossos cursos</p>
+        </a>
+        <a href="../Em_Andamento/Andamento.html">
+            <p>Cursos em andamento</p>
+        </a>
+        <a href="../Sobre/Sobre.html">
+            <p>Sobre nós</p>
+        </a>
+    </nav>
+    <div class="tres_icones">
+        <a href="../Favoritos/favoritos.html"><img src="../../Assets//coracao.png" alt="favoritos"></a>
+        <a href="../Carrinho/Carrinho.html"><img src="../../Assets/carrinho.png" alt="carrinho"></a>
+        <a href="../Login/Login.html"><img src="../../Assets/user.png" alt="login"></a>
+    </div>
+</header>
+
+<body>
+    <section id="container-cards-cursos">
+
+        <div id="textos_inicio_container_cursos">
+            <h2 id="titulo-section">Amplie suas oportunidades de carreira com Python</h2>
+            <p>Se você trabalha com machine learning ou finanças, ou está buscando uma carreira em
+                desenvolvimento web ou ciência de dados, o Python é uma das
+                habilidades mais importantes que você pode aprender.
+                A sintaxe simples do Python é especialmente adequada para
+                aplicativos de desktop, web e negócios.</p>
+        </div>
+
+        <div id="row-cursos">
+                   
+            <!-- Primeiro card -->
+            <div class="card">
+                <div class="imagem">
+                    <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/django.jpg"
+                        alt="favoritos" id="imagemCurso1">
+                </div>
+                <div class="textos">
+                    <p id="descricaoCurso1">Curso Python + Django</p>
+                    <h2 id="precoCurso1">R$185,99</h2>
+                </div>
+                <div id="div-1-btns-desc-curso">
+                    <div class="btn-desc-home">
+                        <a href="../Descricao/Descricao.html?descricao=Curso Python + Django&preco=R$185,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/django.jpg&descricao_curso=Descrição%20do%20curso%20de%20Python%20+%20Django.%20Aprenda%20a%20desenvolver%20aplicações%20web%20dinâmicas%20e%20escaláveis%20usando%20o%20framework%20Django.%20Explore%20os%20princípios%20do%20Python,%20juntamente%20com%20o%20Django,%20para%20criar%20sites%20robustos%20e%20funcionais.%20Construa%20aplicações%20de%20alto%20nível%20com%20este%20curso%20abrangente.%20Invista%20em%20suas%20habilidades%20de%20desenvolvimento%20web%20com%20Python%20e%20Django.">Ver descrição</a>
+                    </div>
+                    <div id="teste">
+                        <button id="btn-desc-add-carrinho"
+                            onclick="adicionarAoCarrinho('Curso Python + Django', 'R$185,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/django.jpg')">Adicionar
+                            ao carrinho</button>
+                        <button id="btn-desc-add-favorito"
+                            onclick="adicionarAofavoritos('Curso Python + Django', 'R$185,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/django.jpg')">
+                            <img src="../../Assets/coracao.png" alt="favoritos">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segundo card -->
+            <div class="card">
+                <div class="imagem">
+                    <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pandas.png"
+                        alt="favoritos" id="imagemCurso2">
+                </div>
+                <div class="textos">
+                    <p id="descricaoCurso2">Curso Pandas</p>
+                    <h2 id="precoCurso2">R$129,99</h2>
+                </div>
+                <div class="div-btns-desc-curso">
+                    <div class="btn-desc-home">
+                        <a href="../Descricao/Descricao.html?descricao=Curso Pandas&preco=R$129,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pandas.png&descricao_curso=Descrição%20do%20curso%20de%20Pandas.%20Aprenda%20a%20manipular%20e%20analisar%20dados%20usando%20a%20biblioteca%20Pandas%20em%20Python.%20Explore%20estruturas%20de%20dados,%20limpeza,%20filtragem%20e%20transformação%20de%20dados.%20Desenvolva%20habilidades%20essenciais%20para%20trabalhar%20com%20dados%20em%20Python%20e%20prepare-se%20para%20o%20mundo%20da%20análise%20de%20dados.">Ver descrição</a>
+                    </div>
+                    <div id="teste">
+                        <button id="btn-desc-add-carrinho"
+                            onclick="adicionarAoCarrinho('Curso Pandas', 'R$129,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pandas.png')">Adicionar
+                            ao carrinho</button>
+                        <button id="btn-desc-add-favorito"
+                            onclick="adicionarAofavoritos('Curso Pandas', 'R$129,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pandas.png')">
+                            <img src="../../Assets/coracao.png" alt="favoritos">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terceiro card -->
+            <div class="card">
+                <div class="imagem">
+                    <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/flask.webp"
+                        alt="favoritos" id="imagemCurso3">
+                </div>
+                <div class="textos">
+                    <p id="descricaoCurso3">Curso Flask</p>
+                    <h2 id="precoCurso3">R$139,99</h2>
+                </div>
+                <div class="div-btns-desc-curso">
+                    <div class="btn-desc-home">
+                        <a href="../Descricao/Descricao.html?descricao=Curso Flask&preco=R$139,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/flask.webp&descricao_curso=Descrição%20do%20curso%20de%20Flask.%20Aprenda%20a%20desenvolver%20aplicações%20web%20usando%20o%20framework%20Flask%20em%20Python.%20Explore%20a%20criação%20de%20rotas,%20templates,%20formulários%20e%20autenticação.%20Desenvolva%20habilidades%20essenciais%20para%20construir%20aplicações%20web%20leves%20e%20eficientes.%20Prepare-se%20para%20criar%20seus%20próprios%20projetos%20usando%20o%20Flask.">Ver descrição</a>
+                    </div>
+                    <div id="teste">
+                        <button id="btn-desc-add-carrinho"
+                            onclick="adicionarAoCarrinho('Curso Flask', 'R$139,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/flask.webp')">Adicionar
+                            ao carrinho</button>
+                        <button id="btn-desc-add-favorito"
+                            onclick="adicionarAofavoritos('Curso Flask', 'R$139,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/flask.webp')">
+                            <img src="../../Assets/coracao.png" alt="favoritos">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quarto card -->
+            <div class="card">
+                <div class="imagem">
+                    <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/python.png"
+                        alt="favoritos" id="imagemCurso4">
+                </div>
+                <div class="textos">
+                    <p id="descricaoCurso4">Curso Python</p>
+                    <h2 id="precoCurso4">R$167,99</h2>
+                </div>
+                <div class="div-btns-desc-curso">
+                    <div class="btn-desc-home">
+                        <a href="../Descricao/Descricao.html?descricao=Curso Python&preco=R$167,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/python.png&descricao_curso=Descrição%20do%20curso%20de%20Python.%20Aprenda%20os%20fundamentos%20da%20programação%20usando%20a%20linguagem%20de%20programação%20Python.%20Explore%20estruturas%20de%20controle,%20listas,%20funções,%20tratamento%20de%20erros%20e%20mais.%20Desenvolva%20habilidades%20essenciais%20para%20programação%20e%20prepare-se%20para%20projetos%20mais%20complexos.">Ver descrição</a>
+                    </div>
+                    <div id="teste">
+                        <button id="btn-desc-add-carrinho"
+                            onclick="adicionarAoCarrinho('Curso Python', 'R$167,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/python.png')">Adicionar
+                            ao carrinho</button>
+                        <button id="btn-desc-add-favorito"
+                            onclick="adicionarAofavoritos('Curso Python', 'R$167,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/python.png')">
+                            <img src="../../Assets/coracao.png" alt="favoritos">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- quinto card -->
+            <div class="card">
+                <div class="imagem">
+                    <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pygame.jpg"
+                        alt="favoritos" id="imagemCurso5">
+                </div>
+                <div class="textos">
+                    <p id="descricaoCurso5">Curso Pygame</p>
+                    <h2 id="precoCurso5">R$167,99</h2>
+                </div>
+                <div class="div-btns-desc-curso" id="div-1-btns-desc-curso5">
+                    <div class="btn-desc-home">
+                        <a href="../Descricao/Descricao.html?descricao=Curso Pygame&preco=R$167,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pygame.jpg&descricao_curso=Descrição%20do%20curso%20de%20Pygame">Ver descrição</a>
+                    </div>
+                    <div id="teste5">
+                        <button id="btn-desc-add-carrinho"
+                            onclick="adicionarAoCarrinho('Curso Pygame', 'R$167,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pygame.jpg')">Adicionar ao carrinho</button>
+                        <button id="btn-desc-add-favorito"
+                            onclick="adicionarAofavoritos('Curso Pygame', 'R$167,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/pygame.jpg')">
+                            <img src="../../Assets/coracao.png" alt="favoritos">
+                        </button>
+                    </div>
+                </div>
+</div>
+
+</section>
+
+            
+        </div>
+    </section> 
+    
+    <section class="card-curso-principal">
+
+        <div id="div-info-card-principal">
+            <div id="textos_card">
+                <h2>Chat GPT para Ciência de Dados e Machine Learning</h2>
+                <p>Use o ChatGPT para agilizar a execução de projetos de Ciência e Análise de Dados, Aprendizagem de Máquina e IA</p>
+                <h3>R$167,99</h3>
+            </div>
+        
+            <div id="div-btns-desc-principal">
+                <div id="btn-desc-princ">
+                    <a href="../Descricao/Descricao.html">Ver descrição</a>
+                </div>
+        
+                <div id="teste">
+                    <button id="btn-desc-add-carrinho" onclick="adicionarAoCarrinho('Chat GPT para Ciência de Dados e Machine Learning', 'R$167,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/chat.webp')"> Adicionar ao carrinho</button>
+                    <button id="btn-desc-add-favorito" onclick="adicionarAofavoritos('Chat GPT para Ciência de Dados e Machine Learning', 'R$167,99', 'https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/chat.webp')">
+                        <img src="../../Assets/coracao.png" alt="favoritos">
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div id="imagem-card-principal">
+            <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/chat.webp" alt="favoritos">
+        </div>
+    </section>
+    
+
+    <section id="container-cards-cursos">
+
+        <div id="textos_inicio_container_cursos">
+            <h2 id="titulo-section">Amplie suas oportunidades de carreira com JavaScript</h2>
+            <p>O JavaScript é uma das linguagens de programação mais utilizadas do planeta, 
+                principalmente porque é a base de aplicativos interativos para Web. Além disso, 
+                o JavaScript é uma ótima linguagem para iniciantes porque os oferece a chance de escrever 
+                código com resposta visual.</p>
+        </div>
+
+        <div id="row-cursos">
+<!-- Curso 6 -->
+<div class="card">
+    <div class="imagem" id="imagemContainer6">
+        <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/javascriptc.jpg"
+            alt="favoritos" id="imagemCurso6">
+    </div>
+    <div class="textos">
+        <p id="descricaoCurso6">JavaScript - básico ao avançado</p>
+        <h2 id="precoCurso6">R$159,99</h2>
+    </div>
+    <div id="div-1-btns-desc-curso6" class="div-btns-desc-curso">
+        <div class="btn-desc-home">
+            <a href="../Descricao/Descricao.html?descricao=JavaScript - básico ao avançado&preco=R$159,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/javascriptc.jpg&descricao_curso=Descrição%20do%20curso%20de%20JavaScript%20básico%20ao%20avançado.%20Aprenda%20os%20fundamentos%20e%20as%20práticas%20avançadas%20para%20desenvolver%20aplicações%20web%20dinâmicas%20e%20interativas.%20Explore%20os%20conceitos%20essenciais%20da%20linguagem%20e%20descubra%20como%20aplicá-los%20em%20projetos%20do%20mundo%20real.%20Adquira%20habilidades%20avançadas%20de%20JavaScript%20para%20criar%20experiências%20de%20usuário%20sofisticadas.%20Seja%20um%20desenvolvedor%20front-end%20proficiente%20com%20JavaScript.">Ver descrição</a>
+        </div>
+        <div id="teste6">
+            <button id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('JavaScript - básico ao avançado', 'R$159,99', document.getElementById('imagemCurso6').src)">Adicionar
+                ao carrinho</button>
+            <button id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('JavaScript - básico ao avançado', 'R$159,99', document.getElementById('imagemCurso6').src)">
+                <img src="../../Assets/coracao.png" alt="favoritos">
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Curso 7 -->
+<div class="card">
+    <div class="imagem" id="imagemContainer7">
+        <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/vuejs.jpg"
+            alt="favoritos" id="imagemCurso7">
+    </div>
+    <div class="textos">
+        <p id="descricaoCurso7">Curso Vue Js + projetos</p>
+        <h2 id="precoCurso7">R$199,99</h2>
+    </div>
+    <div class="div-btns-desc-curso" id="div-1-btns-desc-curso7">
+        <div class="btn-desc-home">
+            <a href="../Descricao/Descricao.html?descricao=Curso Vue Js + projetos&preco=R$199,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/vuejs.jpg&descricao_curso=Descrição%20do%20curso%20de%20Vue.js%20com%20projetos%20práticos.%20Aprenda%20a%20construir%20aplicações%20web%20reativas%20e%20dinâmicas%20com%20este%20framework%20JavaScript%20progressivo.%20Explore%20os%20conceitos%20essenciais,%20como%20componentes,%20diretivas,%20estado%20da%20aplicação%20e%20roteamento.%20Desenvolva%20projetos%20práticos%20para%20solidificar%20seu%20entendimento%20e%20destaque-se%20como%20desenvolvedor%20Vue.js.">Ver descrição</a>
+        </div>
+        <div id="teste7">
+            <button id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso Vue Js + projetos', 'R$199,99', document.getElementById('imagemCurso7').src)">Adicionar
+                ao carrinho</button>
+            <button id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Curso Vue Js + projetos', 'R$199,99', document.getElementById('imagemCurso7').src)">
+                <img src="../../Assets/coracao.png" alt="favoritos">
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Curso 8 -->
+<div class="card">
+    <div class="imagem" id="imagemContainer8">
+        <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/react.jpg"
+            alt="favoritos" id="imagemCurso8">
+    </div>
+    <div class="textos">
+        <p id="descricaoCurso8">Aprenda React - básico ao avançado</p>
+        <h2 id="precoCurso8">R$139,99</h2>
+    </div>
+    <div class="div-btns-desc-curso" id="div-1-btns-desc-curso8">
+        <div class="btn-desc-home">
+            <a href="../Descricao/Descricao.html?descricao=Aprenda React - básico ao avançado&preco=R$139,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/react.jpg&descricao_curso=Descrição%20do%20curso%20de%20React%20básico%20ao%20avançado.%20Aprenda%20os%20fundamentos%20e%20conceitos%20avançados%20desta%20biblioteca%20JavaScript%20popular.%20Explore%20componentes,%20estado,%20props,%20roteamento%20e%20gerenciamento%20de%20estado%20com%20Redux.%20Desenvolva%20aplicações%20web%20modernas%20e%20reativas%20com%20React.%20Torne-se%20um%20desenvolvedor%20React%20proficiente%20com%20este%20curso%20abrangente.">Ver descrição</a>
+        </div>
+        <div id="teste8">
+            <button id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Aprenda React - básico ao avançado', 'R$139,99', document.getElementById('imagemCurso8').src)">Adicionar
+                ao carrinho</button>
+            <button id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Aprenda React - básico ao avançado', 'R$139,99', document.getElementById('imagemCurso8').src)">
+                <img src="../../Assets/coracao.png" alt="favoritos">
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Curso 9 -->
+<div class="card">
+    <div class="imagem" id="imagemContainer9">
+        <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/angular.jpg"
+            alt="favoritos" id="imagemCurso9">
+    </div>
+    <div class="textos">
+        <p id="descricaoCurso9">Curso Angular JS</p>
+        <h2 id="precoCurso9">R$167,99</h2>
+    </div>
+    <div class="div-btns-desc-curso" id="div-1-btns-desc-curso9">
+        <div class="btn-desc-home">
+            <a href="../Descricao/Descricao.html?descricao=Curso Angular JS&preco=R$167,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/angular.jpg&descricao_curso=Descrição%20do%20curso%20de%20Angular%20JS.%20Aprenda%20a%20construir%20aplicações%20web%20dinâmicas%20e%20escaláveis%20com%20este%20framework%20front-end%20popular.%20Explore%20componentes,%20módulos,%20roteamento,%20injeção%20de%20dependências%20e%20comunicação%20HTTP%20com%20serviços.%20Desenvolva%20habilidades%20essenciais%20para%20se%20tornar%20um%20desenvolvedor%20Angular%20JS%20proficiente.%20Invista%20no%20seu%20crescimento%20profissional%20com%20este%20curso%20abrangente.">Ver descrição</a>
+        </div>
+        <div id="teste9">
+            <button id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Curso Angular JS', 'R$167,99', document.getElementById('imagemCurso9').src)">Adicionar
+                ao carrinho</button>
+            <button id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Curso Angular JS', 'R$167,99', document.getElementById('imagemCurso9').src)">
+                <img src="../../Assets/coracao.png" alt="favoritos">
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Curso 10 -->
+<div class="card">
+    <div class="imagem">
+        <img src="https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/jquery.jpg"
+            alt="favoritos" id="imagemCurso10">
+    </div>
+    <div class="textos">
+        <p id="descricaoCurso5">Jquery - básico ao avançado</p>
+        <h2 id="precoCurso5">R$167,99</h2>
+    </div>
+    <div class="div-btns-desc-curso">
+        <div class="btn-desc-home">
+            <a href="../Descricao/Descricao.html?descricao=Jquery - básico ao avançado&preco=R$167,99&imagem=https://raw.githubusercontent.com/janainaacosta/imagens_educadev/main/jquery.jpg&descricao_curso=Explore%20o%20universo%20do%20jQuery%20e%20aprimore%20suas%20habilidades%20de%20desenvolvimento%20web.%20Este%20curso%20abrange%20desde%20os%20conceitos%20básicos%20até%20técnicas%20avançadas,%20capacitando%20você%20a%20criar%20páginas%20web%20interativas%20e%20dinâmicas.%20Descubra%20como%20simplificar%20a%20manipulação%20do%20DOM,%20lidar%20com%20eventos%20e%20realizar%20animações%20de%20forma%20eficaz.%20Torne-se%20um%20mestre%20em%20jQuery%20e%20leve%20suas%20habilidades%20de%20desenvolvimento%20front-end%20para%20o%20próximo%20nível.%20Invista%20no%20seu%20conhecimento%20e%20destaque-se%20no%20mundo%20da%20programação%20web.">Ver descrição</a>
+        </div>
+        <div class="descricao_curso_teste">
+            <p id="descricao_curso">descricao do curso de jquerry zika</p>
+        </div>
+        <div id="teste">
+            <button id="btn-desc-add-carrinho"
+                onclick="adicionarAoCarrinho('Jquery - básico ao avançado', 'R$167,99', document.getElementById('imagemCurso10').src)">Adicionar
+                ao carrinho</button>
+            <button id="btn-desc-add-favorito"
+                onclick="adicionarAofavoritos('Jquery - básico ao avançado', 'R$167,99', document.getElementById('imagemCurso10').src)">
+                <img src="../../Assets/coracao.png" alt="favoritos">
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+        </div>
+    </section> 
+
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+//secao de descricoes 
+
+var descricao_py_django = "Aprenda a desenvolver aplicações web poderosas usando o framework Django em Python. Explore conceitos avançados e boas práticas de desenvolvimento."
+var descricao_pandas = "Mergulhe no mundo da análise de dados com o Pandas em Python. Descubra como manipular e analisar conjuntos de dados de forma eficiente."
+var descricao_flask = "Desenvolva aplicações web leves e flexíveis com o Flask em Python. Crie suas próprias APIs e explore o desenvolvimento web de maneira rápida e eficaz."
+var descricao_python = "Inicie sua jornada no mundo da programação com Python. Aprenda os fundamentos da linguagem e desenvolva habilidades essenciais para a resolução de problemas."
+var descricao_pygame = "Explore o desenvolvimento de jogos 2D usando o Pygame em Python. Crie seus próprios jogos, desde os conceitos básicos até recursos avançados de jogabilidade."
+var descricao_vue = "Construa aplicações web interativas com o Vue.js. Entenda os conceitos fundamentais do Vue e desenvolva projetos dinâmicos e eficientes."
+var descricao_react = "Aprofunde-se no desenvolvimento de interfaces de usuário com React. Crie componentes reutilizáveis e construa aplicações web modernas e escaláveis."
+var descricao_angular = "Domine o framework Angular para criar aplicações web robustas e dinâmicas. Explore conceitos como data binding, injeção de dependências e muito mais."
+var descricao_jquery = "Aprenda a utilizar o jQuery para simplificar a manipulação do DOM e interações com o usuário. Desenvolva aplicações web mais dinâmicas e responsivas."
+var descricao_js = "Aprofunde-se no JavaScript, a linguagem essencial para o desenvolvimento web. Explore conceitos avançados, programação assíncrona e desenvolvimento front-end moderno."
+
+
+
+
+
+
+
+
+        // Carregue os cursos do localStorage
+        var cursos = JSON.parse(localStorage.getItem("cursos")) || [];
+        
+        // Chame a função exibirDetalhesCurso após carregar os cursos
+        exibirDetalhesCurso();
+    
+        var carrinhoDetails = document.getElementById("carrinhoDetails");
+    
+        cursos.forEach(function (curso, index) {
+            var card = document.createElement("div");
+            card.className = "card";
+    
+            var imagemContainer = document.createElement("div");
+            imagemContainer.className = "imagem";
+    
+            var imagemCurso = document.createElement("img");
+            imagemCurso.src = curso.imagem;
+            imagemCurso.alt = "Imagem do Curso";
+    
+            imagemContainer.appendChild(imagemCurso);
+    
+            var textos = document.createElement("div");
+            textos.className = "textos";
+    
+            var descricaoCurso = document.createElement("p");
+            descricaoCurso.innerText = curso.descricao;
+    
+            var precoCurso = document.createElement("h2");
+            precoCurso.innerText = curso.preco;
+    
+            textos.appendChild(descricaoCurso);
+            textos.appendChild(precoCurso);
+    
+            card.appendChild(imagemContainer);
+            card.appendChild(textos);
+    
+            carrinhoDetails.appendChild(card);
+        });
+    
+        // Restante do seu código
+    });
+    
+    function adicionarAoCarrinho(descricao, preco, imagem) {
+        var cursos = JSON.parse(localStorage.getItem("cursos")) || [];
+        cursos.push({
+            descricao: descricao,
+            preco: preco,
+            imagem: imagem,
+        });
+        localStorage.setItem("cursos", JSON.stringify(cursos));
+        window.location.href = "../Carrinho/Carrinho.html";
+    }
+    
+    function adicionarAofavoritos(descricao, preco, imagem) {
+        var cursos_fav = JSON.parse(localStorage.getItem("cursos_fav")) || [];
+        cursos_fav.push({
+            descricao: descricao,
+            preco: preco,
+            imagem: imagem,
+        });
+        localStorage.setItem("cursos_fav", JSON.stringify(cursos_fav));
+        window.location.href = "../Favoritos/favoritos.html";
+    }
+    
+    function exibirDetalhesCurso() {
+        // Obtenha os parâmetros da URL
+        const urlParams = new URLSearchParams(window.location.search);
+    
+        const imagem = urlParams.get('imagem');
+    
+        document.getElementById('imagemCurso').src = imagem || 'URL_DA_IMAGEM_PADRAO';
+
+      
+    }
+    
+</script>
+
+
+</body>
+
+</html> 
