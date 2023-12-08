@@ -40,15 +40,21 @@
 <body>
     <section class="carrinho" id="carrinhoSection">
 
+         
+
         <div  id="textos_inicio_container_cursos">
             <h2 id="titulo-section"> Meu carrinho</h2>
         </div>
 
+        <button id="btn-finalizar"> 
+            <a href="../Finalizar/Finalizar.html">
+                <p>finalizar compra</p>
+            </a>
+        </button>
+        
         <div id="carrinhoDetails"></div>
 
-        <button> <a href="../Finalizar/Finalizar.html">
-                <p>finalizarr compra</p>
-            </a></button>
+        
     </section>
 
     <footer id="div-footer">
@@ -74,7 +80,6 @@
         </div>
         <p>2023</p>
         <div class="logo">
-            <!-- Div Responsavel Pelo Logo -->
             <a href="./Home.html"></a>
             <h2><span>E</span>duca <span>D</span>ev</h2></a>
         </div>
@@ -140,7 +145,5 @@
             window.location.href = '../Finalizar/Finalizar.html?total=' + total;
         });
     </script>
-
 </body>
-
 </html>
